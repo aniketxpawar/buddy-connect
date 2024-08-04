@@ -24,6 +24,10 @@ export const SocketProvider = ({ children }) => {
       console.log("Reconnect attempt");
     });
 
+    connection.on("connect", () => {
+      console.log("Socket Connected ID:", connection.id);
+    });
+
     return () => {
       console.log("Disconnecting socket");
       connection.disconnect();

@@ -1,4 +1,5 @@
 import { SocketProvider } from "../context/socket";
+import "./globals.css";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -7,7 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <SocketProvider>
-        <body>{children}</body>
+        <body className="bg-slate-900">{children}</body>
       </SocketProvider>
     </html>
   );
