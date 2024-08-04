@@ -1,0 +1,5 @@
+/buddy-connect-client/node_modules
+/buddy-connect-client/package-lock.json
+
+/buddy-connect-server/node_modules
+/buddy-connect-server/package-lock.json
